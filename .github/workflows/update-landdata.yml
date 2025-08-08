@@ -1,1 +1,89 @@
+name: Update LandData File
 
+on:
+  schedule:
+    # Запуск каждый день в 6:00 UTC (9:00 по Киеву)
+    - cron: '0 6 * * *'
+  
+  # Позволяет запускать вручную из интерфейса GitHub
+  workflow_dispatch:
+
+jobs:
+  update-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Download latest file
+      run: |
+        echo "Скачивание файла с официального сайта..."
+        curl -L -o landTrans_new.zip "https://land.gov.ua/wp-content/uploads/landMon/landTrans.zip"
+        
+        # Проверяем, что файл скачался и не пустой
+        if [ ! -f landTrans_new.zip ] || [ ! -s landTrans_new.zip ]; then
+          echo "Ошибка: файл не скачался или пустой"
+          exit 1
+        fi
+        
+        echo "Файл успешно скачан, размер: $(du -h landTrans_new.zip | cut -f1)"
+        
+    - name: Check if file changed
+      id: check_changes
+      run: |
+        if [ -f landTrans.zip ]; then
+          # Сравниваем хеши файлов
+          OLD_HASH=$(sha256sum landTrans.zip | cut -d' ' -f1)
+          NEW_HASH=$(sha256sum landTrans_new.zip | cut -d' ' -f1)
+          
+          echo "Старый хеш: $OLD_HASH"
+          echo "Новый хеш: $NEW_HASH"
+          
+          if [ "$OLD_HASH" = "$NEW_HASH" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "Файл не изменился"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Файл изменился, требуется обновление"
+          fi
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Файл отсутствует, требуется первое сохранение"
+        fi
+        
+    - name: Update file if changed
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        # Заменяем старый файл новым
+        mv landTrans_new.zip landTrans.zip
+        
+        # Получаем информацию о файле
+        FILE_SIZE=$(du -h landTrans.zip | cut -f1)
+        FILE_DATE=$(date '+%Y-%m-%d %H:%M:%S UTC')
+        
+        echo "Обновлен файл размером $FILE_SIZE на $FILE_DATE"
+        
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        git add landTrans.zip
+        git commit -m "Автоматическое обновление файла данных $(date '+%Y-%m-%d %H:%M:%S')"
+        git push
+        
+    - name: Clean up
+      run: |
+        # Удаляем временный файл если он есть
+        if [ -f landTrans_new.zip ]; then
+          rm landTrans_new.zip
+        fi
+        
+    - name: Create release info
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        echo "✅ Файл данных обновлен $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        echo "📁 Размер файла: $(du -h landTrans.zip | cut -f1)" >> $GITHUB_STEP_SUMMARY
+        echo "🔗 Прямая ссылка: https://github.com/${{ github.repository }}/raw/main/landTrans.zip" >> $GITHUB_STEP_SUMMARY
