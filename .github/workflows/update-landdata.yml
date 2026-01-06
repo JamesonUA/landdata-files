@@ -16,7 +16,7 @@ jobs:
     - name: Download latest file
       run: |
         echo "Скачивание файла с официального сайта..."
-        curl -L -o landTrans_new.zip "https://land.gov.ua/wp-content/uploads/landMon/landTrans.zip"
+        curl -L -o landTrans_new.zip "https://land.gov.ua/wp-content/uploads/landMon/trans21.zip"
         
         if [ ! -f landTrans_new.zip ] || [ ! -s landTrans_new.zip ]; then
           echo "Ошибка: файл не скачался или пустой"
