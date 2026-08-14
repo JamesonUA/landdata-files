@@ -105,8 +105,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel='stylesheet' id='auxin-front-icon-css' href='https://land.gov.ua/wp-content/themes/phlox/css/auxin-icon.css?ver=2.17.22' media='all' />
 <link rel='stylesheet' id='auxin-main-css' href='https://land.gov.ua/wp-content/themes/phlox/css/main.css?ver=2.17.22' media='all' />
 <link rel='stylesheet' id='auxin-child-css' href='https://land.gov.ua/wp-content/themes/landtheme/style.css?ver=2.17.22' media='all' />
-<link rel='stylesheet' id='auxin-fonts-google-css' href='//fonts.googleapis.com/css?family=Roboto%20Condensed:300,300italic,regular,italic,700,700italic|Baloo:regular|Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;ver=9' media='all' />
-<link rel='stylesheet' id='auxin-custom-css' href='https://land.gov.ua/wp-content/uploads/phlox/custom.css?ver=9' media='all' />
+<link rel='stylesheet' id='auxin-fonts-google-css' href='//fonts.googleapis.com/css?family=Roboto%20Condensed:300,300italic,regular,italic,700,700italic|Baloo:regular|Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;ver=3' media='all' />
+<link rel='stylesheet' id='auxin-custom-css' href='https://land.gov.ua/wp-content/uploads/phlox/custom.css?ver=3' media='all' />
 <link rel='stylesheet' id='auxin-elementor-base-css' href='https://land.gov.ua/wp-content/themes/phlox/css/other/elementor.css?ver=2.17.22' media='all' />
 <link rel='stylesheet' id='addtoany-css' href='https://land.gov.ua/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' media='all' />
 <style id="addtoany-inline-css">
@@ -182,7 +182,7 @@ var lbwpsOptions = {"label_facebook":"Share on Facebook","label_twitter":"Tweet"
 //# sourceURL=lbwps-options-js-extra
 </script>
 <script id="auxin-modernizr-js-extra">
-var auxin = {"ajax_url":"https://land.gov.ua/wp-admin/admin-ajax.php","is_rtl":"","is_reponsive":"1","is_framed":"","frame_width":"20","wpml_lang":"en","uploadbaseurl":"https://land.gov.ua/wp-content/uploads","nonce":"def63519a2"};
+var auxin = {"ajax_url":"https://land.gov.ua/wp-admin/admin-ajax.php","is_rtl":"","is_reponsive":"1","is_framed":"","frame_width":"20","wpml_lang":"en","uploadbaseurl":"https://land.gov.ua/wp-content/uploads","nonce":"6ef9422127"};
 //# sourceURL=auxin-modernizr-js-extra
 </script>
 <script id="auxin-modernizr-js-before">
@@ -3383,7 +3383,101 @@ body .oldversion {
                 <div id="primary" class="aux-primary" >
                     <div class="content" role="main" data-target="index" >
 
-                        <section class="widget-container aux-widget-recent-posts-land aux-parent-aub00600fb"><div data-element-id="aub00600fb" class="aux-blog-land-style aux-ajax-view "><div class="aux-block post-197243">
+                        <section class="widget-container aux-widget-recent-posts-land aux-parent-aube4d3228"><div data-element-id="aube4d3228" class="aux-blog-land-style aux-ajax-view "><div class="aux-block post-199769">
+                        <article class="aux-column-post-entry land-post-style aux-no-thumb post-199769 post type-post status-publish format-standard hentry category-derzhavnyi-kontrol-za-vykorystanniam-ta-okhoronoiu-zemel category-do-uvahy-hromadian-ta-iurosib">
+                            
+                            <div class="entry-main">
+                                                        
+                                <header class="entry-header">
+                                
+                                    <h4 class="entry-title">
+                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/">
+                                            Повідомлення про початок адміністративних проваджень та прийняті рішення                                        </a>
+                                    </h4>
+                                                                    <div class="entry-format">
+                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/">
+                                            <div class="post-format format-"> </div>
+                                        </a>
+                                    </div>
+                                </header>
+                                                            
+                                <div class="entry-info">
+                                                                    <div class="entry-date">
+                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/">
+                                            <time datetime="2026-08-13T16:40:12+02:00" title="2026-08-13T16:40:12+02:00" >13.08.2026</time>
+                                        </a>
+                                    </div>
+                                                                                                    <span class="entry-meta-sep meta-sep">від</span>
+                                    <span class="author vcard">
+                                        <a href="https://land.gov.ua/author/bestuser/" rel="author" title="Перегляд всіх записів Автор" >
+                                            Автор                                        </a>
+                                    </span>
+                                                                                                    <span class="entry-tax ">
+                                        <a href="https://land.gov.ua/category/napriamy-diialnosti/derzhavnyi-kontrol-za-vykorystanniam-ta-okhoronoiu-zemel/" title="Посмотреть все записи вДержавний контроль за використанням та охороною земель" rel="category" >Державний контроль за використанням та охороною земель</a><a href="https://land.gov.ua/category/hromadskosti/do-uvahy-hromadian-ta-iurosib/" title="Посмотреть все записи вДо уваги громадян та юридичних осіб" rel="category" >До уваги громадян та юридичних осіб</a>                                    </span>
+                                                                                                                                            </div>
+                            
+                                                            <div class="entry-content">
+                                                                            <p>
+Повідомлення про розгляд звернення, зареєстрованого у Держгеокадастрі 11.08.2026 за № Ф-659/0/5-26Повідомлення про розгляд звернення, зареєстрованого у Держгеокадастрі від 04.08.2026 за № 22-32758/0/1-26Повідомлення про розгляд звернення, зареєстрованого у Держгеокадастрі 23.07.2026 за № 22-30978/0/1-26Повідомлення про прийняте Держгеокадастром рішення за результатами розгляду звернення, зареєстр ...</p><div class="clear"></div>                                </div>
+                                                                                        <footer class="entry-meta aux-after-content">
+                                                                        <div class="readmore">
+                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/" class="aux-read-more"><span class="aux-read-more-text">Детальніше</span></a>
+                                    </div>
+                                                                    </footer>
+                            
+                            </div>
+
+                        </article>
+</div><div class="aux-block post-202433">
+                        <article class="aux-column-post-entry land-post-style aux-no-thumb post-202433 post type-post status-publish format-standard hentry category-informatsiia-pro-zakupivli">
+                            
+                            <div class="entry-main">
+                                                        
+                                <header class="entry-header">
+                                
+                                    <h4 class="entry-title">
+                                        <a href="https://land.gov.ua/obgruntuvannya-tehnichnyh-ta-yakisnyh-harakterystyk-predmeta-zakupivli-rozmiru-byudzhetnogo-pryznachennya-ochikuvanoyi-vartosti-predmeta-zakupivli-poslugy-shhodo-prydbannya-liczenzijnogo-programnogo-2/">
+                                            Обґрунтування технічних та якісних характеристик предмета закупівлі, розміру бюджетного призначення, очікуваної вартості предмета закупівлі послуги щодо Придбання ліцензійного програмного забезпечення антивірусного захисту (ліцензії на право користування програмним забезпеченням «ESET PROTECT Entry з локальним управлінням»), для 245 об’єктів (поновлення), на 1 рік                                        </a>
+                                    </h4>
+                                                                    <div class="entry-format">
+                                        <a href="https://land.gov.ua/obgruntuvannya-tehnichnyh-ta-yakisnyh-harakterystyk-predmeta-zakupivli-rozmiru-byudzhetnogo-pryznachennya-ochikuvanoyi-vartosti-predmeta-zakupivli-poslugy-shhodo-prydbannya-liczenzijnogo-programnogo-2/">
+                                            <div class="post-format format-"> </div>
+                                        </a>
+                                    </div>
+                                </header>
+                                                            
+                                <div class="entry-info">
+                                                                    <div class="entry-date">
+                                        <a href="https://land.gov.ua/obgruntuvannya-tehnichnyh-ta-yakisnyh-harakterystyk-predmeta-zakupivli-rozmiru-byudzhetnogo-pryznachennya-ochikuvanoyi-vartosti-predmeta-zakupivli-poslugy-shhodo-prydbannya-liczenzijnogo-programnogo-2/">
+                                            <time datetime="2026-08-13T10:13:59+02:00" title="2026-08-13T10:13:59+02:00" >13.08.2026</time>
+                                        </a>
+                                    </div>
+                                                                                                    <span class="entry-meta-sep meta-sep">від</span>
+                                    <span class="author vcard">
+                                        <a href="https://land.gov.ua/author/bestuser/" rel="author" title="Перегляд всіх записів Автор" >
+                                            Автор                                        </a>
+                                    </span>
+                                                                                                    <span class="entry-tax ">
+                                        <a href="https://land.gov.ua/category/derzhavni-zakupivli/informatsiia-pro-zakupivli/" title="Посмотреть все записи вІнформація про закупівлі" rel="category" >Інформація про закупівлі</a>                                    </span>
+                                                                                                                                            </div>
+                            
+                                                            <div class="entry-content">
+                                                                            <p>
+(відповідно до пункту 41&nbsp;постанови КМУ від 11.10.2016 № 710 «Про ефективне використання державних коштів» (зі змінами))
+
+
+
+Назва предмету закупівлі:48760000-3 – Пакети програмного забезпечення для захисту від вірусів (Придбання ліцензійного програмного забезпечення антивірусного захисту (ліцензії на право користування програмним забезпеченням «ESET PROTECT Entry з локальним управлінням»), дл ...</p><div class="clear"></div>                                </div>
+                                                                                        <footer class="entry-meta aux-after-content">
+                                                                        <div class="readmore">
+                                        <a href="https://land.gov.ua/obgruntuvannya-tehnichnyh-ta-yakisnyh-harakterystyk-predmeta-zakupivli-rozmiru-byudzhetnogo-pryznachennya-ochikuvanoyi-vartosti-predmeta-zakupivli-poslugy-shhodo-prydbannya-liczenzijnogo-programnogo-2/" class="aux-read-more"><span class="aux-read-more-text">Детальніше</span></a>
+                                    </div>
+                                                                    </footer>
+                            
+                            </div>
+
+                        </article>
+</div><div class="aux-block post-197243">
                         <article class="aux-column-post-entry land-post-style aux-no-thumb post-197243 post type-post status-publish format-standard hentry category-derzhavna-ekspertyza-sertyfikatsiia-ta-nahliad-u-sferi-zemleustroiu">
                             
                             <div class="entry-main">
@@ -3620,51 +3714,6 @@ body .oldversion {
                             </div>
 
                         </article>
-</div><div class="aux-block post-199769">
-                        <article class="aux-column-post-entry land-post-style aux-no-thumb post-199769 post type-post status-publish format-standard hentry category-derzhavnyi-kontrol-za-vykorystanniam-ta-okhoronoiu-zemel category-do-uvahy-hromadian-ta-iurosib">
-                            
-                            <div class="entry-main">
-                                                        
-                                <header class="entry-header">
-                                
-                                    <h4 class="entry-title">
-                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/">
-                                            Повідомлення про початок адміністративних проваджень та прийняті рішення                                        </a>
-                                    </h4>
-                                                                    <div class="entry-format">
-                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/">
-                                            <div class="post-format format-"> </div>
-                                        </a>
-                                    </div>
-                                </header>
-                                                            
-                                <div class="entry-info">
-                                                                    <div class="entry-date">
-                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/">
-                                            <time datetime="2026-08-06T10:24:48+02:00" title="2026-08-06T10:24:48+02:00" >06.08.2026</time>
-                                        </a>
-                                    </div>
-                                                                                                    <span class="entry-meta-sep meta-sep">від</span>
-                                    <span class="author vcard">
-                                        <a href="https://land.gov.ua/author/bestuser/" rel="author" title="Перегляд всіх записів Автор" >
-                                            Автор                                        </a>
-                                    </span>
-                                                                                                    <span class="entry-tax ">
-                                        <a href="https://land.gov.ua/category/napriamy-diialnosti/derzhavnyi-kontrol-za-vykorystanniam-ta-okhoronoiu-zemel/" title="Посмотреть все записи вДержавний контроль за використанням та охороною земель" rel="category" >Державний контроль за використанням та охороною земель</a><a href="https://land.gov.ua/category/hromadskosti/do-uvahy-hromadian-ta-iurosib/" title="Посмотреть все записи вДо уваги громадян та юридичних осіб" rel="category" >До уваги громадян та юридичних осіб</a>                                    </span>
-                                                                                                                                            </div>
-                            
-                                                            <div class="entry-content">
-                                                                            <p>
-Повідомлення про розгляд звернення, зареєстрованого у Держгеокадастрі від 04.08.2026 за № 22-32758/0/1-26Повідомлення про розгляд звернення, зареєстрованого у Держгеокадастрі 23.07.2026 за № 22-30978/0/1-26Повідомлення про прийняте Держгеокадастром рішення за результатами розгляду звернення, зареєстрованого у Держгеокадастрі від 16.07.2026 № 22-30077/0/1-26Повідомлення про розгляд звернення, заре ...</p><div class="clear"></div>                                </div>
-                                                                                        <footer class="entry-meta aux-after-content">
-                                                                        <div class="readmore">
-                                        <a href="https://land.gov.ua/povidomlennya-pro-pochatok-administratyvnogo-provadzhennya/" class="aux-read-more"><span class="aux-read-more-text">Детальніше</span></a>
-                                    </div>
-                                                                    </footer>
-                            
-                            </div>
-
-                        </article>
 </div><div class="aux-block post-202321">
                         <article class="aux-column-post-entry land-post-style aux-no-thumb post-202321 post type-post status-publish format-standard hentry category-informatsiia-pro-zakupivli">
                             
@@ -3812,59 +3861,6 @@ body .oldversion {
                             </div>
 
                         </article>
-</div><div class="aux-block post-202265">
-                        <article class="aux-column-post-entry land-post-style aux-no-thumb post-202265 post type-post status-publish format-standard hentry category-aparat">
-                            
-                            <div class="entry-main">
-                                                        
-                                <header class="entry-header">
-                                
-                                    <h4 class="entry-title">
-                                        <a href="https://land.gov.ua/ogolosheno-dobir-na-zajnyattya-vakantnoyi-posady-vodiya-avtotransportnyh-zasobiv-viddilu-materialno-tehnichnogo-zabezpechennya-derzhavnoyi-sluzhby-ukrayiny-z-pytan-geodeziyi-kartografiyi-ta-kadastr-15/">
-                                            Оголошено добір на зайняття вакантної посади водія автотранспортних засобів Відділу матеріально-технічного забезпечення Державної служби України з питань геодезії, картографії та кадастру                                        </a>
-                                    </h4>
-                                                                    <div class="entry-format">
-                                        <a href="https://land.gov.ua/ogolosheno-dobir-na-zajnyattya-vakantnoyi-posady-vodiya-avtotransportnyh-zasobiv-viddilu-materialno-tehnichnogo-zabezpechennya-derzhavnoyi-sluzhby-ukrayiny-z-pytan-geodeziyi-kartografiyi-ta-kadastr-15/">
-                                            <div class="post-format format-"> </div>
-                                        </a>
-                                    </div>
-                                </header>
-                                                            
-                                <div class="entry-info">
-                                                                    <div class="entry-date">
-                                        <a href="https://land.gov.ua/ogolosheno-dobir-na-zajnyattya-vakantnoyi-posady-vodiya-avtotransportnyh-zasobiv-viddilu-materialno-tehnichnogo-zabezpechennya-derzhavnoyi-sluzhby-ukrayiny-z-pytan-geodeziyi-kartografiyi-ta-kadastr-15/">
-                                            <time datetime="2026-08-03T07:12:00+02:00" title="2026-08-03T07:12:00+02:00" >03.08.2026</time>
-                                        </a>
-                                    </div>
-                                                                                                    <span class="entry-meta-sep meta-sep">від</span>
-                                    <span class="author vcard">
-                                        <a href="https://land.gov.ua/author/obruchkova/" rel="author" title="Перегляд всіх записів Обручкова Анна" >
-                                            Обручкова Анна                                        </a>
-                                    </span>
-                                                                                                    <span class="entry-tax ">
-                                        <a href="https://land.gov.ua/category/kadrova-polityka/vakansii/aparat/" title="Посмотреть все записи вАпарат" rel="category" >Апарат</a>                                    </span>
-                                                                                                                                            </div>
-                            
-                                                            <div class="entry-content">
-                                                                            <p>
-Загальна інформація
-
-
-
-Особи, зайняті обслуговуванням органів виконавчої влади, призначаються на підставі поданої заяви, заповненої особової картки працівника &nbsp;встановленого зразка та документів, що підтверджують наявність у таких осіб громадянства України, освіти, досвіду роботи та інших документів згідно з вимогами законодавства.
-
-
-
-Претендент на посаду надсилає на електронну адресу HR.hir ...</p><div class="clear"></div>                                </div>
-                                                                                        <footer class="entry-meta aux-after-content">
-                                                                        <div class="readmore">
-                                        <a href="https://land.gov.ua/ogolosheno-dobir-na-zajnyattya-vakantnoyi-posady-vodiya-avtotransportnyh-zasobiv-viddilu-materialno-tehnichnogo-zabezpechennya-derzhavnoyi-sluzhby-ukrayiny-z-pytan-geodeziyi-kartografiyi-ta-kadastr-15/" class="aux-read-more"><span class="aux-read-more-text">Детальніше</span></a>
-                                    </div>
-                                                                    </footer>
-                            
-                            </div>
-
-                        </article>
 </div></div></section><!-- widget-container --><nav class="aux-pagination aux-round aux-no-border" ><ul class="pagination"><li class='page active'><span class='page-numbers'>1</span></li><li class='page'><a class='page-numbers' data-paged='2' href='https://land.gov.ua/wp-content/uploads/landMon/trans21.zip/page/2/'>2</a></li><li class='page'><a class='page-numbers' data-paged='3' href='https://land.gov.ua/wp-content/uploads/landMon/trans21.zip/page/3/'>3</a></li><li class="page"><span class="page-numbers dots">...</span></li><li class='page'><a class='page-numbers' data-paged='236' href='https://land.gov.ua/wp-content/uploads/landMon/trans21.zip/page/236/'>236</a></li><li class="next"><a class="page-numbers" data-paged="2" href="https://land.gov.ua/wp-content/uploads/landMon/trans21.zip/page/2/">Далі</a></li><li class="last"><a class="page-numbers" data-paged="236" href="https://land.gov.ua/wp-content/uploads/landMon/trans21.zip/page/236/">В кінець</a></li></ul></nav>
                     </div><!-- end content -->
                 </div><!-- end primary -->
@@ -3886,7 +3882,7 @@ body .oldversion {
                         <div class="aux-widget-area aux-1-3 aux-tb-3 aux-mb-1">
     <section id="text-11" class="widget-container widget_text _ph_"><h3 class="widget-title">Контактні дані</h3>			<div class="textwidget"><p>03151, м. Київ, вул. Святослава Хороброго, 3</p>
 <p>з 09:00 до 18:00 (у пт – до 16:45)</p>
-<p><a href="tel:0800300808">0800300808</a> | <a href="/cdn-cgi/l/email-protection#5b373a353f1b373a353f753c342d752e3a"><span class="__cf_email__" data-cfemail="0f636e616b4f636e616b21686079217a6e">[email&#160;protected]</span></a></p>
+<p><a href="tel:0800300808">0800300808</a> | <a href="/cdn-cgi/l/email-protection#1a767b747e5a767b747e347d756c346f7b"><span class="__cf_email__" data-cfemail="85e9e4ebe1c5e9e4ebe1abe2eaf3abf0e4">[email&#160;protected]</span></a></p>
 </div>
 		</section><section id="custom_html-2" class="widget_text widget-container widget_custom_html _ph_"><div class="textwidget custom-html-widget"><button type="button" class="wahout aicon_link" accesskey="z" aria-label="Людям з вадами зору" title="Людям з вадами зору"><i class="fas fa-low-vision"></i> <span class="pogodatext">Людям з вадами зору</span></button>
 <div class="finfo1" style="display:none;"><span style="width: 60px;
@@ -3918,7 +3914,7 @@ body .oldversion {
     float: left;
     margin-top: 0;
     ">beta</span>
-	<p style="color: #54595f; font-size: 12px;">Портал працює в тестовому режимі. Пропозиції надсилайте на <a href="/cdn-cgi/l/email-protection#b4c7c1c4c4dbc6c0f4d8d5dad09ad3dbc29ac1d5"><span class="__cf_email__" data-cfemail="780b0d0808170a0c381419161c561f170e560d19">[email&#160;protected]</span></a></p></div>
+	<p style="color: #54595f; font-size: 12px;">Портал працює в тестовому режимі. Пропозиції надсилайте на <a href="/cdn-cgi/l/email-protection#196a6c6969766b6d597578777d377e766f376c78"><span class="__cf_email__" data-cfemail="fc8f898c8c938e88bc909d9298d29b938ad2899d">[email&#160;protected]</span></a></p></div>
 
 <div class="finfo3"><span style="
     border: 3px solid #007ec4;
@@ -4212,7 +4208,7 @@ body .oldversion {
 <script id="lbwps-photoswipe5-js-module" src="https://land.gov.ua/wp-content/plugins/lightbox-photoswipe/assets/ps5/frontend.min.js?ver=5.10.1" type="module"></script>
 <script id="wow-js" src="https://land.gov.ua/wp-content/plugins/gutentor/assets/library/wow/wow.min.js?ver=1.2.1"></script>
 <script id="getwid-blocks-frontend-js-js-extra">
-var Getwid = {"settings":[],"ajax_url":"https://land.gov.ua/wp-admin/admin-ajax.php","isRTL":"","nonces":{"contact_form":"539ffb8a3c"}};
+var Getwid = {"settings":[],"ajax_url":"https://land.gov.ua/wp-admin/admin-ajax.php","isRTL":"","nonces":{"contact_form":"dd08f545b2"}};
 //# sourceURL=getwid-blocks-frontend-js-js-extra
 </script>
 <script id="getwid-blocks-frontend-js-js" src="https://land.gov.ua/wp-content/plugins/getwid/assets/js/frontend.blocks.js?ver=2.2.0"></script>
@@ -4238,7 +4234,7 @@ var wpcf7 = {
 <script id="contact-form-7-js" src="https://land.gov.ua/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6"></script>
 <script id="wp-accessibility-helper-js" src="https://land.gov.ua/wp-content/plugins/wp-accessibility-helper/assets/js/wp-accessibility-helper.min.js?ver=1.0.0"></script>
 <script id="wp-statistics-tracker-js-extra">
-var WP_Statistics_Tracker_Object = {"requestUrl":"https://land.gov.ua","ajaxUrl":"https://land.gov.ua/wp-admin/admin-ajax.php","hitParams":{"wp_statistics_hit":1,"source_type":"404","source_id":0,"search_query":"","signature":"8aaf6f4693a041b398f1f311bea35e91","action":"wp_statistics_hit_record"},"option":{"dntEnabled":"","bypassAdBlockers":"1","consentIntegration":{"name":null,"status":[]},"isPreview":false,"userOnline":false,"isWpConsentApiActive":false},"isLegacyEventLoaded":"","customEventAjaxUrl":"https://land.gov.ua/wp-admin/admin-ajax.php?action=wp_statistics_custom_event&nonce=305de1666a","onlineParams":{"wp_statistics_hit":1,"source_type":"404","source_id":0,"search_query":"","signature":"8aaf6f4693a041b398f1f311bea35e91","action":"wp_statistics_online_check"},"jsCheckTime":"60000"};
+var WP_Statistics_Tracker_Object = {"requestUrl":"https://land.gov.ua","ajaxUrl":"https://land.gov.ua/wp-admin/admin-ajax.php","hitParams":{"wp_statistics_hit":1,"source_type":"404","source_id":0,"search_query":"","signature":"8aaf6f4693a041b398f1f311bea35e91","action":"wp_statistics_hit_record"},"option":{"dntEnabled":"","bypassAdBlockers":"1","consentIntegration":{"name":null,"status":[]},"isPreview":false,"userOnline":false,"isWpConsentApiActive":false},"isLegacyEventLoaded":"","customEventAjaxUrl":"https://land.gov.ua/wp-admin/admin-ajax.php?action=wp_statistics_custom_event&nonce=2023cf3d41","onlineParams":{"wp_statistics_hit":1,"source_type":"404","source_id":0,"search_query":"","signature":"8aaf6f4693a041b398f1f311bea35e91","action":"wp_statistics_online_check"},"jsCheckTime":"60000"};
 //# sourceURL=wp-statistics-tracker-js-extra
 </script>
 <script id="wp-statistics-tracker-js" src="https://land.gov.ua/?f982ce=5f6a86da7b.js&#038;ver=14.16.10"></script>
@@ -4248,9 +4244,9 @@ var WP_Statistics_Tracker_Object = {"requestUrl":"https://land.gov.ua","ajaxUrl"
 <script id="masonry-js" src="https://land.gov.ua/wp-includes/js/masonry.min.js?ver=4.2.2"></script>
 <script id="auxin-plugins-js" src="https://land.gov.ua/wp-content/themes/phlox/js/plugins.min.js?ver=2.17.22"></script>
 <script id="auxin-scripts-js" src="https://land.gov.ua/wp-content/themes/phlox/js/scripts.min.js?ver=2.17.22"></script>
-<script id="auxin-custom-js-js" src="https://land.gov.ua/wp-content/uploads/phlox/custom.js?ver=4.6"></script>
+<script id="auxin-custom-js-js" src="https://land.gov.ua/wp-content/uploads/phlox/custom.js?ver=9.1"></script>
 <script id="gutentor-block-js-extra">
-var gutentorLS = {"fontAwesomeVersion":"5","restNonce":"724db384c6","restUrl":"https://land.gov.ua/wp-json/"};
+var gutentorLS = {"fontAwesomeVersion":"5","restNonce":"3eb067687c","restUrl":"https://land.gov.ua/wp-json/"};
 //# sourceURL=gutentor-block-js-extra
 </script>
 <script id="gutentor-block-js" src="https://land.gov.ua/wp-content/plugins/gutentor/assets/js/gutentor.min.js?ver=4.0.5"></script>
@@ -4394,5 +4390,5 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 </style>
 <!-- Shortcodes Ultimate custom CSS - end -->
 <!-- end wp_footer -->
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2a5ff7fdb2d6812',t:'MTc4NjYwNjA1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2ae38b0ee6419ca',t:'MTc4NjY5MjI4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
