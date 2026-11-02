@@ -5,77 +5,78 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+env:
+  RELEASE_TAG: data
+  ASSET_NAME: landTrans.zip
+
 jobs:
   update-file:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Download latest file
-      run: |
-        echo "Скачивание файла с официального сайта..."
-        curl -fL --http1.1 --max-time 1800 --retry 5 --retry-delay 15 --retry-all-errors -C - -o landTrans_new.zip "https://land.gov.ua/wp-content/uploads/landMon/landtrans.zip"
-        
-        if [ ! -f landTrans_new.zip ] || [ ! -s landTrans_new.zip ]; then
-          echo "Ошибка: файл не скачался или пустой"
-          exit 1
-        fi
-        
-        echo "Файл успешно скачан, размер: $(du -h landTrans_new.zip | cut -f1)"
-        
-    - name: Check if file changed
-      id: check_changes
-      run: |
-        if [ -f landTrans.zip ]; then
-          OLD_HASH=$(sha256sum landTrans.zip | cut -d' ' -f1)
+      - name: Download latest file
+        run: |
+          echo "Скачивание файла с официального сайта..."
+          curl -fL --http1.1 --max-time 1800 --retry 5 --retry-delay 15 --retry-all-errors -C - -o landTrans_new.zip "https://land.gov.ua/wp-content/uploads/landMon/landtrans.zip"
+
+          if [ ! -f landTrans_new.zip ] || [ ! -s landTrans_new.zip ]; then
+            echo "Ошибка: файл не скачался или пустой"
+            exit 1
+          fi
+
+          echo "Файл успешно скачан, размер: $(du -h landTrans_new.zip | cut -f1)"
+
+      - name: Check if file changed
+        id: check_changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
           NEW_HASH=$(sha256sum landTrans_new.zip | cut -d' ' -f1)
-          
-          echo "Старый хеш: $OLD_HASH"
           echo "Новый хеш: $NEW_HASH"
-          
-          if [ "$OLD_HASH" = "$NEW_HASH" ]; then
+
+          # Хеш (digest) текущего файла в релизе; пусто, если релиза/файла ещё нет
+          OLD_HASH=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json assets \
+            --jq ".assets[] | select(.name==\"$ASSET_NAME\") | .digest" 2>/dev/null | sed 's/^sha256://' || true)
+          echo "Старый хеш: ${OLD_HASH:-<нет>}"
+
+          if [ -n "$OLD_HASH" ] && [ "$OLD_HASH" = "$NEW_HASH" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "Файл не изменился"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "Файл изменился, требуется обновление"
+            echo "Файл изменился (или релиза ещё нет), требуется обновление"
           fi
-        else
-          echo "changed=true" >> $GITHUB_OUTPUT
-          echo "Файл отсутствует, требуется первое сохранение"
-        fi
-        
-    - name: Update file if changed
-      if: steps.check_changes.outputs.changed == 'true'
-      run: |
-        mv landTrans_new.zip landTrans.zip
-        
-        FILE_SIZE=$(du -h landTrans.zip | cut -f1)
-        FILE_DATE=$(date '+%Y-%m-%d %H:%M:%S UTC')
-        
-        echo "Обновлен файл размером $FILE_SIZE на $FILE_DATE"
-        
-    - name: Commit and push changes
-      if: steps.check_changes.outputs.changed == 'true'
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        
-        git add landTrans.zip
-        git commit -m "Автоматическое обновление файла данных $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
-        
-    - name: Clean up
-      run: |
-        if [ -f landTrans_new.zip ]; then
-          rm landTrans_new.zip
-        fi
-        
-    - name: Create release info
-      if: steps.check_changes.outputs.changed == 'true'
-      run: |
-        echo "✅ Файл данных обновлен $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
-        echo "📁 Размер файла: $(du -h landTrans.zip | cut -f1)" >> $GITHUB_STEP_SUMMARY
-        echo "🔗 Прямая ссылка: https://github.com/${{ github.repository }}/raw/main/landTrans.zip" >> $GITHUB_STEP_SUMMARY
+
+      - name: Publish file to GitHub Release
+        if: steps.check_changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mv landTrans_new.zip "$ASSET_NAME"
+
+          # Создаём релиз с постоянным тегом при первом запуске
+          if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+              --title "LandData file" \
+              --notes "Автоматически обновляемый файл данных. Прямая ссылка: https://github.com/$GITHUB_REPOSITORY/releases/download/$RELEASE_TAG/$ASSET_NAME"
+          fi
+
+          # Заменяем файл в релизе
+          gh release upload "$RELEASE_TAG" "$ASSET_NAME" --repo "$GITHUB_REPOSITORY" --clobber
+
+          gh release edit "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+            --notes "Файл обновлён $(date '+%Y-%m-%d %H:%M:%S UTC'). Прямая ссылка: https://github.com/$GITHUB_REPOSITORY/releases/download/$RELEASE_TAG/$ASSET_NAME"
+
+      - name: Summary
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "✅ Файл данных обновлен $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "📁 Размер файла: $(du -h "$ASSET_NAME" | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 Прямая ссылка: https://github.com/${{ github.repository }}/releases/download/${{ env.RELEASE_TAG }}/${{ env.ASSET_NAME }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Clean up
+        if: always()
+        run: rm -f landTrans_new.zip landTrans.zip
